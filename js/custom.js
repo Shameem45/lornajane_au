@@ -13,8 +13,8 @@
 		speed: 2000,
 		waitForAnimate: false,
 		pauseOnHover:false,
-		autoplay: true,
-		autoplaySpeed: 12000
+		autoplay: false,
+		//autoplaySpeed: 12000
 	});
 	$(".lj-hotspot-icon").click(function(event){
 		event.stopPropagation();
@@ -35,11 +35,18 @@
 	});
 	$(".lj-side-menu li a").click(function(event){
 		$('.lj-category-article').show();
+		$(".lj-hs-content").hide();
+		$(".lj-hotspot-icon").show();
 		$(".lj-side-menu li a").removeClass("active");
 		$(this).addClass("active");
 		var slideIndex = $(this).data("index");
 		$('.lj-gift-sliders').slick('slickGoTo',slideIndex);
 		$('.lj-category-slider').slick('slickGoTo',0)
+	});
+	$(".slick-dots li").click(function(event){
+		$('.lj-category-article').show();
+		$(".lj-hs-content").hide();
+		$(".lj-hotspot-icon").show();
 	});
 	
 
