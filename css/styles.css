@@ -437,7 +437,7 @@ top: 50%;right: 0;text-align: center;transform: translateY(-56%);line-height: 1;
     }
 
 
-    .lj-hs-y1 a {
+    .lj-hs-y1 > a {
         top: 60%;
         left: 45%;
     }
