@@ -563,6 +563,7 @@ top: 50%;right: 0;text-align: center;transform: translateY(-56%);line-height: 1;
     }
     .lj-hotspot-icon:after {font-size: 2.6vw}
     .lj-hotspot-icon {width: 4vw;height:4vw}
+    .lg-hs-close {padding:1px 10px}
 }
 @media (max-width: 420px) {
 .lj-hotspot .lj-hs-content{
