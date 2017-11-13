@@ -113,13 +113,13 @@ img {max-width: 100%;height: auto;vertical-align: middle;}
     position: absolute;
     bottom: 30px;
     width:100%;
+    top:0
 }
-.lg-hs-image h3 {
-    
+.lg-hs-image h3 {    
     text-align: center;
-    width: 70%;
-    background: #000;
-    color: #fff;
+    width: 100%;
+    background: #fff;
+    color: #666;
     padding: 9px;
     font-size: 17px;
     left: 0;
@@ -136,6 +136,10 @@ img {max-width: 100%;height: auto;vertical-align: middle;}
     margin: 20px auto 0;
     text-transform: uppercase;
     text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
 }
 .lg-hs-image a:hover{
     background: #fff;
@@ -351,7 +355,6 @@ top: 50%;right: 0;text-align: center;transform: translateY(-56%);line-height: 1;
         height: 280px;
     }
     .lg-hs-image h3{
-        width: 90%;
         padding: 6px;
         font-size: 15px;
     }
@@ -438,127 +441,128 @@ top: 50%;right: 0;text-align: center;transform: translateY(-56%);line-height: 1;
         top: 60%;
         left: 45%;
     }
-    .lj-hotspot.lj-hs-y2 a {
+    .lj-hotspot.lj-hs-y2 > a {
         right: 24%;
         top: 33%;
     }
-    .lj-hotspot.lj-hs-y3 a {
+    .lj-hotspot.lj-hs-y3 > a {
         right: 14%;
         top: 59%;
     }
-    .lj-hotspot.lj-hs-y4 a {
+    .lj-hotspot.lj-hs-y4 > a {
         right: 44%;
         top: 33%;
     }
-    .lj-hotspot.lj-hs-y8 a {
+    .lj-hotspot.lj-hs-y8 > a {
         left: 40%;
         top: 55%;
     }
-    .lj-hotspot.lj-hs-y7 a {
+    .lj-hotspot.lj-hs-y7 > a {
         right: 13%;
         top: 75%;
     }
-    .lj-hotspot.lj-hs-y6 a {
+    .lj-hotspot.lj-hs-y6 > a {
         right: 20%;
         top: 40%;
     }
-    .lj-hotspot.lj-hs-y5 a {
+    .lj-hotspot.lj-hs-y5 > a {
         right: 50%;
         top: 74%;
     }
-    .lj-hotspot.lj-hs-s1 a {
+    .lj-hotspot.lj-hs-s1 > a {
         right: 31%;
         bottom: 27%;
         top: auto;
     }
-    .lj-hotspot.lj-hs-s2 a {
+    .lj-hotspot.lj-hs-s2 > a {
         top: 40%;
         right: 20%;
     }
 
-    .lj-hotspot.lj-hs-s3 a {
+    .lj-hotspot.lj-hs-s3 > a {
         top: auto;
         bottom: 10%;
         right: 20%;
     }  
-    .lj-hotspot.lj-hs-s5
+    .lj-hotspot.lj-hs-s5 >
     a {
        bottom: 44%;
        top: auto;
        right: 30%;
    }
-   .lj-hotspot.lj-hs-s4
+   .lj-hotspot.lj-hs-s4 >
     a{
        top: 26%;
        right: 30%;
     }
-    .lj-hotspot.lj-hs-s6 a {
+    .lj-hotspot.lj-hs-s6 > a {
         left: 60%;
         bottom: 10%;
         top: auto;
     } 
-    .lj-hotspot.lj-hs-s8 a {
+    .lj-hotspot.lj-hs-s8 > a {
         bottom: 31%;
         top: auto;
         right: 44%;
     }
     
-    .lj-hotspot.lj-hs-s7 a {
+    .lj-hotspot.lj-hs-s7 > a {
         top: 25%;
         right: 24%;
     }
-    .lj-hotspot.lj-hs-s9
+    .lj-hotspot.lj-hs-s9 >
     a {
        right: 34%;
        top: 40%;
    }
-   .lj-hotspot.lj-hs-s10
+   .lj-hotspot.lj-hs-s10 >
     a {
        right: 34%;
        bottom: 40%;
        top:auto;
    }
-   .lj-hotspot.lj-hs-t1 a {
+   .lj-hotspot.lj-hs-t1 > a {
         right: 40%;
         top: 3%;
     }
-    .lj-hotspot.lj-hs-c1 a {
+    .lj-hotspot.lj-hs-c1 > a {
         top: 60%;
         right: 20%;
     }
-    .lj-hotspot.lj-hs-c2 a {
+    .lj-hotspot.lj-hs-c2 > a {
         right: 34%;
         bottom: 10%;
         top: auto;
     }
-    .lj-hotspot.lj-hs-c3
+    .lj-hotspot.lj-hs-c3 >
     a {
        right: 30%;
        top: 30%;
    }
    
-   .lj-hotspot.lj-hs-c4
-    a {
+   .lj-hotspot.lj-hs-c4 > a {
        right: 35%;
        top: 60%;
    }
-   .lj-hotspot.lj-hs-c5 a {
+   .lj-hotspot.lj-hs-c5 > a {
         right: 30%;
         top: 50%;
     }
-    .lj-hotspot.lj-hs-b1 a {
+    .lj-hotspot.lj-hs-b1 > a {
         right: 25%;
         top: 70%;
     }
-    .lj-hotspot.lj-hs-b3 a {
+    .lj-hotspot.lj-hs-b3 > a {
         right: 20%;
         bottom: 35%;
         top: auto;
     }
-    .lj-hotspot.lj-hs-b2 a {
+    .lj-hotspot.lj-hs-b2 > a {
         right: 20%;
         top: 40%;
     }
+    .lj-hotspot-icon:after {font-size: 2.6vw}
+    .lj-hotspot-icon {width: 4vw;height:4vw}
 }
 @media (max-width: 420px) {
 .lj-hotspot .lj-hs-content{
