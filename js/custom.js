@@ -37,8 +37,9 @@
 		}
 	});
 	
-	$('body').on('click', '.lj-category-item, .lg-hs-close', function() {
+	$('body').on('click', '.lg-hs-close', function() {
 		$('.lj-popup-overlay').remove();
+		$(".lj-hotspot-icon").removeClass('active');
 		$(".lj-hs-content").hide();
 		$(".lj-hotspot-icon").show();
 		$('.lj-category-article').show();
@@ -56,13 +57,46 @@
 		$('.lj-gift-sliders').slick('slickGoTo',slideIndex);
 		$('.lj-category-slider').slick('slickGoTo',0);
 		$('.lj-popup-overlay').remove();
+		$(".lj-hotspot-icon").removeClass('active');
 	});
 	$(".slick-dots li").click(function(event){
 		$('.lj-category-article').show();
 		$(".lj-hs-content").hide();
 		$(".lj-hotspot-icon").show();
 		$('.lj-popup-overlay').remove();
+		$(".lj-hotspot-icon").removeClass('active');
 	});
-	
+
+	$(window).on("load", function() {
+        var windowWidth = $(window).width();
+        if(windowWidth > 768) {
+            if(!$(".lj-category-item:first-child").hasClass("filter-first")) {
+                $('.lj-category-slider').slick('slickUnfilter');
+                $(".lj-gift-sliders .lj-gift-item").each(function(){
+                    $(".lj-category-item:first-child").addClass("filter-first");
+                    
+                });
+                $('.lj-category-slider').slick('slickFilter',':not(".filter-first")')
+            }
+        }else {
+        	$('.lj-category-slider').slick('slickUnfilter');
+        	$(".lj-category-item:first-child").removeClass("filter-first");
+        }      
+    });
+    $(window).on("resize", function() {
+        var windowWidth = $(window).width();
+        if(windowWidth > 768) {
+            if(!$(".lj-category-item:first-child").hasClass("filter-first")) {
+                $('.lj-category-slider').slick('slickUnfilter');
+                $(".lj-gift-sliders .lj-gift-item").each(function(){
+                    $(".lj-category-item:first-child").addClass("filter-first");                    
+                });
+                $('.lj-category-slider').slick('slickFilter',':not(".filter-first")')
+            }
+        }else {
+        	$('.lj-category-slider').slick('slickUnfilter');
+        	$(".lj-category-item:first-child").removeClass("filter-first");
+        }      
+    });
 
 })(TRM.$, TRM.$);
