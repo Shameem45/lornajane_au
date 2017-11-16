@@ -4,6 +4,12 @@
 		infinite: false,
 		dots:false,
 		swipe:false
+	}).on('beforeChange',function(){
+		$('.lj-category-article').show();
+		$(".lj-hs-content").hide();
+		$(".lj-hotspot-icon").show();
+		$('.lj-popup-overlay').remove();
+		$(".lj-hotspot-icon").removeClass('active');
 	});
 	$(".lj-category-slider").slick({
 		arrows: false,
@@ -15,6 +21,12 @@
 		pauseOnHover:false,
 		autoplay: false,
 		//autoplaySpeed: 12000
+	}).on('beforeChange',function(){
+		$('.lj-category-article').show();
+		$(".lj-hs-content").hide();
+		$(".lj-hotspot-icon").show();
+		$('.lj-popup-overlay').remove();
+		$(".lj-hotspot-icon").removeClass('active');
 	});
 	$(".lj-hotspot-icon").mouseenter(function(event){
 		event.stopPropagation();
@@ -59,23 +71,24 @@
 		$('.lj-popup-overlay').remove();
 		$(".lj-hotspot-icon").removeClass('active');
 	});
-	$(".slick-dots li").click(function(event){
-		$('.lj-category-article').show();
-		$(".lj-hs-content").hide();
-		$(".lj-hotspot-icon").show();
-		$('.lj-popup-overlay').remove();
-		$(".lj-hotspot-icon").removeClass('active');
-	});
+	// $(".slick-dots li").click(function(event){
+		
+	// });
 
 	$(window).on("load", function() {
         var windowWidth = $(window).width();
         if(windowWidth > 768) {
             if(!$(".lj-category-item:first-child").hasClass("filter-first")) {
                 $('.lj-category-slider').slick('slickUnfilter');
+                
                 $(".lj-gift-sliders .lj-gift-item").each(function(){
-                    $(".lj-category-item:first-child").addClass("filter-first");
-                    
+                	//console.log($(this).length);
+                	if($(this).hasClass('lj-limited-collection') == false){
+                		//alert('1');
+                		$(this).find('.lj-category-item:first-child').addClass("filter-first");
+                	}
                 });
+            	
                 $('.lj-category-slider').slick('slickFilter',':not(".filter-first")')
             }
         }else {
@@ -89,7 +102,9 @@
             if(!$(".lj-category-item:first-child").hasClass("filter-first")) {
                 $('.lj-category-slider').slick('slickUnfilter');
                 $(".lj-gift-sliders .lj-gift-item").each(function(){
-                    $(".lj-category-item:first-child").addClass("filter-first");                    
+                    if($(this).hasClass('lj-limited-collection') == false){
+                		$(this).find('.lj-category-item:first-child').addClass("filter-first");
+                	}                   
                 });
                 $('.lj-category-slider').slick('slickFilter',':not(".filter-first")')
             }
