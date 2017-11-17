@@ -66,14 +66,12 @@
 			$(".lj-hotspot-icon").on('mouseenter',function(){
 				openHotspot($(this),'hover');
 			});
-			reset()
 		}
 		else{
 			$(".lj-hotspot-icon").on('click',function(event){
 				openHotspot($(this),'click');
 				event.stopPropagation();
 			});
-			reset()
 		}
 	});
 

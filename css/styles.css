@@ -28,7 +28,7 @@ img {max-width: 100%;height: auto;vertical-align: middle;}
 .lj-side-menu > li:last-child {padding-bottom: 0}
 .lj-side-menu > li > a {display: block;padding:5px;background:#f5cbd5;position: relative;height: 50px;width: 50px; -webkit-transition: width 0.3s; /* For Safari 3.1 to 6.0 */transition: width 0.3s;}
 .lj-side-menu > li > a span{color:#fff; display:none;}
-.lj-side-menu > li > a:after {content: "";position: absolute;right: -24px;top: 0;bottom: 0;border-left: 24px solid #f5cbd5;border-top: 23px solid transparent;border-bottom: 27px solid transparent;}
+.lj-side-menu > li > a:after {content: "";position: absolute;right: -23px;top: 0;bottom: 0;border-left: 24px solid #f5cbd5;border-top: 23px solid transparent;border-bottom: 27px solid transparent;}
 .lj-side-menu > li > a:hover,.lj-side-menu > li > a.active {background: #f22e78;}
 /*new css */
 .lj-side-menu > li.yogi > a:hover,.lj-side-menu > li.yogi > a.active {width:150px;}
@@ -639,6 +639,7 @@ top: 50%;right: 0;text-align: center;transform: translateY(-56%);line-height: 1;
     display: none;
 }
 @media (max-width: 1024px) {
+.lj-category-article > h3 {font-size:3vw}
 .lj-side-menu > li.yogi > a:hover, .lj-side-menu > li.yogi > a.active {width: 146px;}
 .lj-sidebar .lg-mob-only{display: block !important;margin: 0 auto;}
 .lj-sidebar .lg-desk-only{display: none !important;}
@@ -668,6 +669,7 @@ top: 50%;right: 0;text-align: center;transform: translateY(-56%);line-height: 1;
 }
 @media (max-width: 768px) {
 .li-banner-container > img {width:768px}
+.lj-category-article > h3 {font-size: 4.5vw}
 .lj-category-article span{display: inline-block;position: absolute;top: -21px;left: 50%;transform: translateX(-50%);cursor: pointer;opacity:0}
 .lj-category-article span.active-bottom {top:-21px;opacity:1;transition-delay:.6s}
 .lj-article-close {position: absolute;right:10px;top:10px;color: #000;font-size: 20px;text-decoration: none;display: block}
@@ -678,7 +680,7 @@ top: 50%;right: 0;text-align: center;transform: translateY(-56%);line-height: 1;
 .slick-dots {position: static;padding-bottom: 10px;}
 .lg-mob-only {display: block !important;}
 .lg-desk-only {display: none !important;}
-.lj-category-article{max-width: 100%;left: 0;right:0;top:0;bottom:0;height:100%;background: rgba(255,255,255,0.7);padding:60px 30px 70px;color: #444;transform: translateY(0%);
+.lj-category-article{max-width: 100%;left: 0;right:0;top:0;bottom:0;height:100%;background: rgba(255,255,255,0.8);padding:60px 30px 70px;color: #444;transform: translateY(0%);
     z-index:5;transition: all 0.4s ease}
 .lj-category-article.active-demo {transform: translateY(100%);transition-delay: .4s}
 .lj-category-article.active{transform:translateY(0);}
