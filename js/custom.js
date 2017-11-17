@@ -4,6 +4,7 @@
 		infinite: false,
 		dots: false,
 		swipe: false,
+		accessibility: false
 	}).on('beforeChange', function () {
 		reset();
 	}).on('afterChange', function(event, slick, currentSlide, index){
@@ -24,7 +25,8 @@
 		waitForAnimate: false,
 		pauseOnHover: false,
 		autoplay: true,
-		autoplaySpeed: 5000
+		autoplaySpeed: 5000,
+		pauseOnFocus: false
 	}).on('beforeChange', function () {
 		reset();
 	}).on('afterChange', function(event, slick, currentSlide, index){
@@ -64,12 +66,14 @@
 			$(".lj-hotspot-icon").on('mouseenter',function(){
 				openHotspot($(this),'hover');
 			});
+			reset()
 		}
 		else{
 			$(".lj-hotspot-icon").on('click',function(event){
 				openHotspot($(this),'click');
 				event.stopPropagation();
 			});
+			reset()
 		}
 	});
 
@@ -79,7 +83,7 @@
 		$(".lj-hotspot-icon").show();
 		$('.lj-popup-overlay').remove();
 		$(".lj-hotspot-icon").removeClass('active');
-		//$('.lj-category-slider').slick('slickPlay');
+		$('.lj-category-slider').slick('slickPlay');
 	}
 
 	function openHotspot(element,triggerEvent) {
