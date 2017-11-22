@@ -25,7 +25,7 @@
 		speed: 800,
 		waitForAnimate: false,
 		pauseOnHover: false,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2500,
 		pauseOnFocus: false
 	});
@@ -116,7 +116,7 @@
 	$('body').on('click', '.lg-hs-close', function () {
 		hotspotStatus=false;
 		reset();
-		categorySlider.slick('slickPlay');
+		//categorySlider.slick('slickPlay');
 	});
 
 	$("body").on("click", ".lg-hs-image", function (event) {
@@ -132,7 +132,7 @@
 			//reset();
 		}else{
 			reset();
-			categorySlider.slick('slickPlay');
+			//categorySlider.slick('slickPlay');
 		} 
 	});
 
@@ -143,7 +143,7 @@
 		$('.lj-gift-sliders').slick('slickGoTo', slideIndex);
 		categorySlider.slick('slickGoTo', 0);
 		if(hotspotStatus){
-			categorySlider.slick('slickPlay');
+			//categorySlider.slick('slickPlay');
 		} 
 		reset();
 	});
