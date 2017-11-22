@@ -147,7 +147,6 @@
 		} 
 		reset();
 	});
-
 	/*$(".lj-hotspot-icon").on('mouseenter', function (event) {
 		event.stopPropagation();
 		console.log("hover");
