@@ -151,7 +151,7 @@
 		categorySlider.slick('slickPlay');
 	});
 	$(".lj-category-slider .slick-dots li button").click(function () {		
-		categorySlider.slick('slickPlay');
+		categorySlider.slick('slickPlay'); 
 	});		
 	/*$(".lj-hotspot-icon").on('mouseenter', function (event) {
 		event.stopPropagation();
