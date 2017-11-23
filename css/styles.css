@@ -11,7 +11,7 @@
 
 * {box-sizing: border-box;line-height: 1.4;list-style-type: none}
 html,body {margin: 0px;padding: 0px;border: 0px;font-family: "HelveticaNeue57Cn",Helvetica,Arial,sans-serif;}
-img {max-width: 100%;height: auto;vertical-align: middle;}
+img {max-width: 100%;height: auto;vertical-align: middle;} 
 
 .lj-top-nav {text-align: center;background: url(../img/top-nav-bg.jpg) repeat-x}
 .li-banner-container > img {width: 1366px;position: relative;left: 50%;transform: translateX(-50%);max-width: none;}

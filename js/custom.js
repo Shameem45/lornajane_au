@@ -179,7 +179,7 @@
 		//alert('ok');
 
 		$(this).parent('div').toggleClass('active');
-		categorySlider.slick('slickPause');
+		categorySlider.slick('slickPause'); 
 	})
 
 })(TRM.$, TRM.$);
