@@ -19,13 +19,13 @@
 
 	var categorySlider = $(".lj-category-slider").slick({
 		arrows: false,
-		infinite: false,
+		infinite: true,
 		dots: true,
 		fade: true,
 		speed: 800,
 		waitForAnimate: false,
 		pauseOnHover: false,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2500,
 		pauseOnFocus: false
 	});
