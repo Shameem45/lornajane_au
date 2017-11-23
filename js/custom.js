@@ -87,6 +87,7 @@
 		$(".lj-hotspot-icon").show();
 		$('.lj-popup-overlay').remove();
 		$(".lj-hotspot-icon").removeClass('active');
+		categorySlider.slick('slickPlay');
 		
 	}
 
