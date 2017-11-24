@@ -74,7 +74,7 @@ sup {font-size: 55%}
 .lj-category-item:before {content: "";position: absolute;left: 0;right: 0;top: 0;bottom: 0;background: rgba(0,0,0,0.05);}
 
 .lj-gift-item,.lj-category-item {display:none}
-.lj-gift-item:first-child,.lj-category-item:first-child {display:block}
+.lj-gift-item:first-child,.lj-category-item:first-child {display:block} 
 
 .slick-slide img {display: inline-block;}
 .slick-slide {outline: none !important;}
